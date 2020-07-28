@@ -1,0 +1,66 @@
+/* =-=-= Cabeçalho =-=-= */
+
+header{
+	background-color: crimson;
+	text-align: center;
+}
+
+header h1{
+	font-family: 'Ranchers', cursive;
+	font-size: 4em;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+header h3{
+	color: white;
+	font-family: 'Epilogue', sans-serif;
+	padding-bottom: 10px;
+}
+
+.borda{
+	border: 1px solid black;
+}
+
+div.borda{
+	margin-top: 45px;
+}
+
+.numero-questao{
+	margin: 0 auto;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 1.9em;
+	padding: 20px 120px;
+	font-weight: bolder;
+}
+
+.titulo-questao{
+	margin: 0 auto;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 2.5em;
+}
+
+.alternativas{
+	width: 100%;
+	margin: 25px;
+}
+
+div.alternativa{
+	border: 1px solid blue;
+	text-align: center;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 1.6em;
+	width: 35%;
+	margin: 0 auto;
+}
+
+.botao{
+	margin: 15px;
+}
+
+.alternativa:hover{
+	background-color: black;
+	cursor: pointer;
+	color: white;
+}
