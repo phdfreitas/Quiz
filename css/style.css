@@ -42,7 +42,8 @@ div.borda{
 .titulo-questao{
 	margin: 0 auto;
 	font-family: 'Epilogue', sans-serif;
-	font-size: 2.2em;
+	font-size: 2em;
+	text-align: center;
 }
 
 .alternativas{

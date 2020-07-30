@@ -11,7 +11,11 @@ switch (tema) {
 		break;
 	case 'futebol':
 		assunto = 1
-		temaPerguntas += 10
+		temaPerguntas = 10
+		break;
+	case 'geral':
+		assunto = 2
+		temaPerguntas = 20
 		break;
 }
 
@@ -36,6 +40,18 @@ let perguntas = Array(
 	 'Qual a equipe com mais títulos da Copa Libertadores da América?',
 	 'Quantos títulos seguidos possui a Juventus (Itália)?',
 	 'Quantos anos tem o jogador mais velho do futebol em atividade?',
+	 ''],
+
+	 ['Franquia da NBA com mais título?',
+	 'Qual é a data de nascimento de Michael Jackson?',
+	 'Qual dos livros abaixo possui o maior número de cópidas vendidas?',
+	 'Ator/Atriz mais premiado do Óscar?',
+	 'Em que ano foi fundada a Netflix?',
+	 'Filme com mais indicações ao Óscar?',
+	 'Quantos ossos possui o corpo humano adulto?',
+	 'Qual dos nomes abaixo NÃO é um dos fundadores do Facebook?',
+	 'Atualmente quem é o homem mais rico do mundo?',
+	 'Qual o ácido produzido pelo estômago?',
 	 '']
 )
 
@@ -45,8 +61,8 @@ let respostas = Array(
 	Array('04/12/1995', '12/04/1997', '06/07/2000', '12/12/1996'),
 	Array('22 anos', '28 anos', '18 anos', '30 anos'), 
 	Array('Bill Gates', 'Post Malone', 'Brendan Eich', 'James Gosling'),
-	Array('Sistema Grampeadores de Banco de Dados', 'Sistema Gramatical de Banco de Dados', 
-		  'Sistema Gerenciadores de Banco de Dados', 'Sistema Gerenciadores de Base de Dados'),
+	Array('Sistema de Grampeamento de Banco de Dados', 'Sistema Gramatical de Banco de Dados', 
+		  'Sistema de Gerenciamento de Banco de Dados', 'Sistema de Gerenciamento de Base de Dados'),
 	Array('Dell', 'Microsoft', 'Apple', 'IBM'),
 	Array('Flow-Matic', 'Fortran', 'COBOL', 'Lisp'),
 	Array('Programação Orientada e de Objetos', 'Programação sobre os Objetos', 
@@ -54,6 +70,8 @@ let respostas = Array(
 	Array('USP - 1970', 'Unicamp - 1968', 'UFRJ - 1952', 'USP - 1966'),
 	Array('1861', '1859', '1862', '1890'),
 	Array('Steve Jobs', 'Steve Wozniak', 'Alan Turing', 'John Von Neumann'),
+
+
 	Array('20ª', '22ª', '21ª', '19ª'),
 	Array('Milan - 10 Títulos', 'Milan - 11 Títulos', 'Real Madrid - 14 Títulos', 'Real Madrid - 13 Títulos'),
 	Array('Lionel Messi', 'Cristiano Ronaldo', 'Michel Platini', 'Johan Cruijff'),
@@ -64,7 +82,18 @@ let respostas = Array(
 	Array('Boca Juniors', 'São Paulo', 'River Plate', 'Independiente'),
 	Array('12', '7', '9', '10'),
 	Array('60 anos', '57 anos', '45 anos', '53 anos'),
-	Array('', '', '', ''),
+
+	Array('Lakers', 'Bulls', 'Celtics', 'Knicks'),	
+	Array('29/08/1958', '27/04/1960', '27/02/1957', '12/12/1956'),	
+	Array('O Senhor dos Anéis', 'Dom Quixote', 'Harry Potter e a Pedra Filosofal', 'Os Miseráveis'),	
+	Array('Meryl Streep', 'Daniel Day-Lewis', 'Jack Nicholson', 'Katharine Hepburn'),	
+	Array('1997', '1998', '1999', '2000'),	
+	Array('Amor, Sublime Amor', 'E o Vento Levou', 'Ben-Hur', 'Titanic'),	
+	Array('211', '206', '218', '196'),	
+	Array('Mark Zuckerberg', 'Eduardo Saverim', 'Chris Hughes', 'Andrew McCollum'),	
+	Array('Bill Gates', 'Larry Page', 'Jeff Bezos', 'Warren Buffet'),	
+	Array('Carbônico', 'Sulfúrico', 'Fólico', 'Clorídico'),	
+	Array('', '', '', ''),	
 )
 
 
@@ -81,8 +110,12 @@ let contador = 0;
 let respostas_jogador = Array()
 let respostas_corretas = Array('letra_A', 'letra_B', 'letra_C', 'letra_C', 'letra_D', 
 						 	   'letra_B', 'letra_D', 'letra_B', 'letra_A', 'letra_C',
+
 						 	   'letra_B', 'letra_D', 'letra_A', 'letra_C', 'letra_D',
-						 	   'letra_B', 'letra_B', 'letra_D', 'letra_C', 'letra_D')
+						 	   'letra_B', 'letra_B', 'letra_D', 'letra_C', 'letra_D',
+						 	   
+						 	   'letra_C', 'letra_A', 'letra_B', 'letra_D', 'letra_A',
+						 	   'letra_D', 'letra_B', 'letra_B', 'letra_C', 'letra_D')
 
 
 // Função principal. Todo o fluxo do jogo é controlado aqui.
