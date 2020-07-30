@@ -10,17 +10,31 @@ if(tema === 'tecnologia'){
 
 // Array de Perguntas. Contém vários arrays representando os temas
 let perguntas = Array(
-	['Quando o JavaScript foi criado?', 'Quem foi o criador do JavaScript?',
-	'Há quantos anos surgiu a linguagem de programação "Python"?', '']
+	['Quando o JavaScript foi criado?',
+	'Há quantos anos surgiu a linguagem de programação Python?', 
+	'Quem foi o criador do JavaScript?', 'O que a sigla SGBD significa?', 'Qual das empresas surgiu primeiro?',
+	'Qual dessas é considerada a 1ª linguagem de programação de alto nível?', 'O que significa POO?', 
+	'Quando e onde surgiu o primeiro curso de Ciência da Computação do Brasil?', 
+	'Em que ano foi fundado o Massachusetts Institute of Technology - MIT?', 'Quem é considerado o pai da computação moderna?',
+	'']
 )
 
 // Array de Respostas. Assim como o array de perguntas
 // Contém vários arrays que por sua vez contém as respostas (corretas ou não)
 let respostas = Array(
 	Array('04/12/1995', '12/04/1997', '06/07/2000', '12/12/1996'),
-	Array('Bill Gates', 'Post Malone', 'Brendan Eich', 'James Gosling'),
 	Array('22 anos', '28 anos', '18 anos', '30 anos'), 
-	Array('', '', '', '') 
+	Array('Bill Gates', 'Post Malone', 'Brendan Eich', 'James Gosling'),
+	Array('Sistema Grampeadores de Banco de Dados', 'Sistema Gramatical de Banco de Dados', 
+		  'Sistema Gerenciadores de Banco de Dados', 'Sistema Gerenciadores de Base de Dados'),
+	Array('Dell', 'Microsoft', 'Apple', 'IBM'),
+	Array('Flow-Matic', 'Fortran', 'COBOL', 'Lisp'),
+	Array('Programação Orientada e de Objetos', 'Programação sobre os Objetos', 
+		  'Paradigma Orientado a Objetos', 'Programação Orientada a Objetos'),
+	Array('USP - 1970', 'Unicamp - 1968', 'UFRJ - 1952', 'USP - 1966'),
+	Array('1861', '1859', '1862', '1890'),
+	Array('Steve Jobs', 'Steve Wozniak', 'Alan Turing', 'John Von Neumann'),
+	Array('', '', '', '')
 )
 
 
@@ -35,7 +49,8 @@ let letra_D = document.getElementById('resposta-letra-D')
 	
 let contador = 0;
 let respostas_jogador = Array()
-let respostas_corretas = Array('letra_A', 'letra_C', 'letra_B')
+let respostas_corretas = Array('letra_A', 'letra_B', 'letra_C', 'letra_C', 'letra_D', 'letra_B', 'letra_D', 
+							   'letra_B', 'letra_A', 'letra_C')
 
 
 // Função principal. Todo o fluxo do jogo é controlado aqui.
@@ -54,12 +69,12 @@ function game(letra){
 		if(letra != undefined) respostas_jogador.push(letra)
 	} 
 	
-	if(contador === 3){ // Quando as 10 perguntas forem respondidas
+	if(contador === 10){ // Quando as 10 perguntas forem respondidas
 						 // A pontuação do jogador será verificada
 
 		let pontuacaoJogador = 0
 
-		for (let i = 0; i < 3; i++) {
+		for (let i = 0; i < 10; i++) {
 			if(respostas_jogador[i] === respostas_corretas[i]){
 				pontuacaoJogador++
 			}
