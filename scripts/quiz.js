@@ -3,10 +3,18 @@ let tema = window.location.search.replace('?', '')
 
 // Controle do array de assuntos do Quiz
 let assunto = -1
+let temaPerguntas = 0
 
-if(tema === 'tecnologia'){
-	assunto = 0
+switch (tema) {
+	case 'tecnologia':
+		assunto = 0
+		break;
+	case 'futebol':
+		assunto = 1
+		temaPerguntas += 10
+		break;
 }
+
 
 // Array de Perguntas. Contém vários arrays representando os temas
 let perguntas = Array(
@@ -16,7 +24,19 @@ let perguntas = Array(
 	'Qual dessas é considerada a 1ª linguagem de programação de alto nível?', 'O que significa POO?', 
 	'Quando e onde surgiu o primeiro curso de Ciência da Computação do Brasil?', 
 	'Em que ano foi fundado o Massachusetts Institute of Technology - MIT?', 'Quem é considerado o pai da computação moderna?',
-	'']
+	''],
+
+	['A Copa do Mundo de 2022 - no Qatar - consiste em qual edição da competição?',
+	 'Qual o time com mais títulos da "Liga dos Campeões" e qual o número de seus títulos?',
+	 'Qual dos jogadores possui o maior número de Bolas de Ouro?',
+	 'Quem é considerado o Rei do Futebol?',
+	 'Depois do Brasil quais seleções possuem mais título de Copa do Mundo?',
+	 'Quem foi o vice-campeão do Brasileirão 2016?',
+	 'Quem venceu a Copa do Nordeste 2017?',
+	 'Qual a equipe com mais títulos da Copa Libertadores da América?',
+	 'Quantos títulos seguidos possui a Juventus (Itália)?',
+	 'Quantos anos tem o jogador mais velho do futebol em atividade?',
+	 '']
 )
 
 // Array de Respostas. Assim como o array de perguntas
@@ -34,7 +54,17 @@ let respostas = Array(
 	Array('USP - 1970', 'Unicamp - 1968', 'UFRJ - 1952', 'USP - 1966'),
 	Array('1861', '1859', '1862', '1890'),
 	Array('Steve Jobs', 'Steve Wozniak', 'Alan Turing', 'John Von Neumann'),
-	Array('', '', '', '')
+	Array('20ª', '22ª', '21ª', '19ª'),
+	Array('Milan - 10 Títulos', 'Milan - 11 Títulos', 'Real Madrid - 14 Títulos', 'Real Madrid - 13 Títulos'),
+	Array('Lionel Messi', 'Cristiano Ronaldo', 'Michel Platini', 'Johan Cruijff'),
+	Array('Messi', 'Carlinhos Bala', 'Pelé', 'Mauro Shampoo'),
+	Array('Argentina e Itália', 'Alemanha e França', 'Argentina e França', 'Alemanha e Itália'),
+	Array('Corinthians', 'Santos', 'Palmeiras', 'Flamengo'),
+	Array('Sport', 'Bahia', 'Santa Cruz', 'Botafogo-PB'),
+	Array('Boca Juniors', 'São Paulo', 'River Plate', 'Independiente'),
+	Array('12', '7', '9', '10'),
+	Array('60 anos', '57 anos', '45 anos', '53 anos'),
+	Array('', '', '', ''),
 )
 
 
@@ -49,8 +79,10 @@ let letra_D = document.getElementById('resposta-letra-D')
 	
 let contador = 0;
 let respostas_jogador = Array()
-let respostas_corretas = Array('letra_A', 'letra_B', 'letra_C', 'letra_C', 'letra_D', 'letra_B', 'letra_D', 
-							   'letra_B', 'letra_A', 'letra_C')
+let respostas_corretas = Array('letra_A', 'letra_B', 'letra_C', 'letra_C', 'letra_D', 
+						 	   'letra_B', 'letra_D', 'letra_B', 'letra_A', 'letra_C',
+						 	   'letra_B', 'letra_D', 'letra_A', 'letra_C', 'letra_D',
+						 	   'letra_B', 'letra_B', 'letra_D', 'letra_C', 'letra_D')
 
 
 // Função principal. Todo o fluxo do jogo é controlado aqui.
@@ -60,10 +92,10 @@ function game(letra){
 		// Dinamicamente os valores serão setados na tela
 		questao_atual.innerHTML = `Questão ${contador + 1}/10`
 		questao.innerHTML = perguntas[assunto][contador]
-		letra_A.innerHTML = respostas[contador][0]
-		letra_B.innerHTML = respostas[contador][1]
-		letra_C.innerHTML = respostas[contador][2]
-		letra_D.innerHTML = respostas[contador][3]
+		letra_A.innerHTML = respostas[contador + temaPerguntas][0]
+		letra_B.innerHTML = respostas[contador + temaPerguntas][1]
+		letra_C.innerHTML = respostas[contador + temaPerguntas][2]
+		letra_D.innerHTML = respostas[contador + temaPerguntas][3]
 		
 		// Se for uma resposta válida, então a resposta do jogador entra no array de respostas
 		if(letra != undefined) respostas_jogador.push(letra)
@@ -75,7 +107,7 @@ function game(letra){
 		let pontuacaoJogador = 0
 
 		for (let i = 0; i < 10; i++) {
-			if(respostas_jogador[i] === respostas_corretas[i]){
+			if(respostas_jogador[i] === respostas_corretas[i + temaPerguntas]){
 				pontuacaoJogador++
 			}
 		}
