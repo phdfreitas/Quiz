@@ -13,21 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
 
-    <script>
-    	
-    	function start() {
-    		let tema = document.getElementById('tema').value
-    		if(tema === ''){
-    			alert('Você precisa escolher um tema para iniciar o jogo.')
-    			return false
-    		}
-    		window.location.href = 'quiz.html?' + tema
-    	}
-
-    </script>
+    
 
 </head>
-<body>
+<body id="quiz">
 
 	<header>
 		<h1>JavaScript Quiz!</h1>
@@ -37,25 +26,50 @@
 	<div class="container borda">
 		<div class="row">
 			<div class="numero-questao">
-				Escolha um tema
-			</div>
-		</div>
-
-		<div class="row ">
-			<div class="numero-questao">
-				<select id="tema">
-					<option value="">Selecione</option>
-					<option value="tecnologia">Tecnologia</option>
-				</select>
+				<span id="questao-atual"></span>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="numero-questao">
-				<button class="btn btn-lg btn-warning" onclick="start()">Start</button>
+			<div id="questao" class="titulo-questao">
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="clear" class="alternativas">
+				<div class="botao">
+					<div class="alternativa" onclick="game('letra_A')">
+						<span id="letra-A">A.</span> 
+						<span id="resposta-letra-A"></span>
+					</div>
+				</div>
+
+				<div class="botao">
+					<div class="alternativa" onclick="game('letra_B')">
+						<span id="letra-B">B.</span>
+						<span id="resposta-letra-B"></span>
+					</div>
+				</div>
+
+				<div class="botao">
+					<div class="alternativa" onclick="game('letra_C')">
+						<span id="letra-C">C.</span>
+						<span id="resposta-letra-C"></span>
+					</div>
+				</div>
+
+				<div class="botao">
+					<div class="alternativa" onclick="game('letra_D')">
+						<span id="letra-D">D.</span>
+						<span id="resposta-letra-D"></span>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
+
+	<script src="scripts/quiz.js"></script>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

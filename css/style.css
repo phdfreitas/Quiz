@@ -19,9 +19,13 @@ header h3{
 	padding-bottom: 10px;
 }
 
+/* =-=-= Fim Cabeçalho =-=-= */
+
 .borda{
 	border: 1px solid black;
 }
+
+/* =-=-= Conteúdo Principal =-=-= */
 
 div.borda{
 	margin-top: 45px;
@@ -63,4 +67,12 @@ div.alternativa{
 	background-color: black;
 	cursor: pointer;
 	color: white;
+}
+
+/* =-=-= Fim Conteúdo Principal =-=-= */
+
+/* Margens entre um botão e outro na tela de fim de jogo */
+
+.botoes{
+	margin: 10px;
 }
