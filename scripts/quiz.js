@@ -5,6 +5,9 @@ let tema = window.location.search.replace('?', '')
 let assunto = -1
 let temaPerguntas = 0
 
+// Variável que irá simular o cronometro.
+let tempoTotal = 0
+
 switch (tema) {
 	case 'tecnologia':
 		assunto = 0
@@ -117,6 +120,11 @@ let respostas_corretas = Array('letra_A', 'letra_B', 'letra_C', 'letra_C', 'letr
 						 	   'letra_C', 'letra_A', 'letra_B', 'letra_D', 'letra_A',
 						 	   'letra_D', 'letra_B', 'letra_B', 'letra_C', 'letra_D')
 
+// Representação do cronometro da aplicação
+let cronometro = setInterval(function(){
+	tempoTotal++
+}, 1000)
+
 
 // Função principal. Todo o fluxo do jogo é controlado aqui.
 function game(letra){
@@ -150,6 +158,28 @@ function game(letra){
 
 		questao_atual.innerHTML = 'Fim de Jogo'
 		questao.innerHTML = `Pontuação: ${pontuacaoJogador} de 10`
+
+		/* =-=-= Impressão Cronometro na Tela =-=-= */
+		if(tempoTotal <= 60){
+			tempo.innerHTML = `Tempo total: ${tempoTotal} segundos`
+		}
+		else{
+			if(tempoTotal <= 3600){
+				let minutos = Math.floor(tempoTotal / 60)
+				let segundos = Math.floor(tempoTotal - (minutos * 60)) 
+				
+				if(minutos < 10){
+					minutos = `0${minutos}`
+				}
+
+				if(segundos < 10){
+					segundos = `0${segundos}`	
+				}
+
+				tempo.innerHTML = `Tempo total: ${minutos}:${segundos} minutos`
+			}
+		}
+		/* =-=-= Fim Impressão Cronometro na Tela =-=-= */
 
 		let alternativas = document.getElementById('clear')
 		alternativas.innerHTML = ''
@@ -186,5 +216,4 @@ function game(letra){
 	}
 	contador++
 }
-
 game()
