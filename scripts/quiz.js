@@ -108,6 +108,8 @@ let letra_B = document.getElementById('resposta-letra-B')
 let letra_C = document.getElementById('resposta-letra-C')
 let letra_D = document.getElementById('resposta-letra-D')
 
+let tempo = document.getElementById('tempo')
+let resultado = document.getElementById('resultado')
 	
 let contador = 0;
 let respostas_jogador = Array()
@@ -180,6 +182,15 @@ function game(letra){
 			}
 		}
 		/* =-=-= Fim Impressão Cronometro na Tela =-=-= */
+
+		if(pontuacaoJogador >= 7){
+			resultado.innerHTML = 'Parabéns! Você passou no Quiz.'
+			resultado.style.color = 'green'
+		}
+		else{
+			resultado.innerHTML = 'Infelizmente você não passou. Mas não fique triste, tente mais uma vez :)'	
+			resultado.style.color = 'red'	
+		}
 
 		let alternativas = document.getElementById('clear')
 		alternativas.innerHTML = ''
