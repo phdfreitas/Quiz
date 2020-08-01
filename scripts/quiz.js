@@ -170,15 +170,11 @@ function game(letra){
 				let minutos = Math.floor(tempoTotal / 60)
 				let segundos = Math.floor(tempoTotal - (minutos * 60)) 
 				
-				if(minutos < 10){
-					minutos = `0${minutos}`
-				}
-
 				if(segundos < 10){
 					segundos = `0${segundos}`	
 				}
 
-				tempo.innerHTML = `Tempo total: ${minutos}:${segundos} minutos`
+				tempo.innerHTML = `Tempo total: ${minutos} minuto(s) e ${segundos} segundos`
 			}
 		}
 		/* =-=-= Fim Impressão Cronometro na Tela =-=-= */
