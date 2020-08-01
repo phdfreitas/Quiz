@@ -2,7 +2,7 @@
 	<img src="imagens/home.png">
 </p>
 
-> Status do Projeto: Em Desenvolvimento :warning:
+> Status do Projeto: Completo :heavy_check_mark:
 
 ## Geral
 O objetivo primordial para o desenvolvimento dessa aplicação não é resolver algum problema específico ou geral, mas única e simplesmente colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript, sendo esse último o maior foco da prática. Sobre o projeto em si, como a imagem acima sugere, se trata de um **Quiz** desenvolvido com **JavaScript**. Toda a dinâmica é criada com *Arrays*. Arrays nesse projeto são usados para "salvar" as perguntas, respostas corretas e respostas do jogador, não sendo a melhor das alternativas, mas que atende aos objetivos e requisitos do projeto, ser simples e pouco complexo.
@@ -24,7 +24,7 @@ Composto de 3 temas diferentes, sendo eles: *Tecnologia, Futebol* e *Geral.* Na 
 
 ## Para Jogar
 - Se quiser apenas testar o jogo, basta acessar o link abaixo:
-	- <a href="">JavaScript Quiz!</a> (Ainda não disponível)
+	- <a href="https://quiz.phdfreitas.repl.co/">JavaScript Quiz!</a>
 - Se quiser baixar o jogo e fazer seus próprios testes e alterações:
 	- No terminal do seu sistema operacional, cole o seguinte comando:
 	> git clone https://github.com/phdfreitas/Quiz.git
