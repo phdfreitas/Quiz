@@ -16,7 +16,7 @@
 
 <h2>O Jogo</h2>
 <p>
-	Com 3 temas diferentes: <em>Tecnologia, Futebol e Geral</em>. Na tela inicial o jogador seleciona o tema que deseja jogar e a partir disso ele terá que responder 10 perguntas sobre o assunto escolhido. Após responder as 10 perguntas, estátisticas do jogo são exibidas, sendo elas: A quantidade de respostas corretas, quanto tempo o jogador levou para responder todas as perguntas e se ele <storng>passou</storng> ou <strong>falhou</strong> no Quiz.
+	Com 3 temas diferentes: <em>Tecnologia, Futebol e Geral</em>. Na tela inicial o jogador seleciona o tema que deseja jogar e a partir disso ele terá que responder 10 perguntas sobre o assunto escolhido. Após responder as 10 perguntas, estatísticas do jogo são exibidas, sendo elas: A quantidade de respostas corretas, quanto tempo o jogador levou para responder todas as perguntas e se ele <strong>passou</strong> ou <strong>falhou</strong> no Quiz.
 </p>
 
 <p align="center">
