@@ -6,7 +6,7 @@
 
 <h2>Geral</h2>
 <p align="justify">
-	O principal objetivo para o desenvolvimento dessa aplicação não é resolver algum problema específico ou geral, mas única e simplesmente colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript, sendo esse último o maior foco da prática. Sobre o projeto em si, como a imagem acima sugere, se trata de um **Quiz** desenvolvido com **JavaScript**. Toda a dinâmica é criada com *Arrays*. Nesse projeto arrays são usados para "salvar" as perguntas, respostas corretas e respostas do jogador, embora não seja a melhor das alternativas, atende aos objetivos e requisitos do projeto, ser simples e pouco complexo.
+	O principal objetivo para o desenvolvimento dessa aplicação não é resolver algum problema específico ou geral, mas única e simplesmente colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript, sendo esse último o maior foco da prática. Sobre o projeto em si, como a imagem acima sugere, se trata de um <strong>Quiz</strong> desenvolvido com <strong>JavaScript</strong>. Toda a dinâmica é criada com <em>Arrays</em>. Nesse projeto arrays são usados para "salvar" as perguntas, respostas corretas e respostas do jogador, embora não seja a melhor das alternativas, atende aos objetivos e requisitos do projeto, ser simples e pouco complexo.
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 <h2>O Jogo</h2>
 <p>
-	Com 3 temas diferentes: *Tecnologia, Futebol* e *Geral.* Na tela inicial o jogador seleciona o tema que deseja jogar e a partir disso ele terá que responder 10 perguntas sobre o assunto escolhido. O nível das perguntas pode variar entre fácil e não tão fácil, isso certamente varia de jogador para jogador. Após responder todas as 10 perguntas, as estátisticas são exibidas, sendo elas: _A quantidade de respostas corretas, quanto tempo o jogador levou para responder todas as perguntas e se ele **passou** ou **falhou** no Quiz._
+	Com 3 temas diferentes: <em>Tecnologia, Futebol e Geral</em>. Na tela inicial o jogador seleciona o tema que deseja jogar e a partir disso ele terá que responder 10 perguntas sobre o assunto escolhido. Após responder as 10 perguntas, estátisticas do jogo são exibidas, sendo elas: A quantidade de respostas corretas, quanto tempo o jogador levou para responder todas as perguntas e se ele <storng>passou</storng> ou <strong>falhou</strong> no Quiz.
 </p>
 
 <p align="center">
