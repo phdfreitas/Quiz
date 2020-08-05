@@ -2,20 +2,22 @@
 	<img src="imagens/home.png">
 </p>
 
-> Status do Projeto: Completo :heavy_check_mark:
+> Status do Projeto: Concluído :heavy_check_mark:
 
-## Geral
-O objetivo primordial para o desenvolvimento dessa aplicação não é resolver algum problema específico ou geral, mas única e simplesmente colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript, sendo esse último o maior foco da prática. Sobre o projeto em si, como a imagem acima sugere, se trata de um **Quiz** desenvolvido com **JavaScript**. Toda a dinâmica é criada com *Arrays*. Arrays nesse projeto são usados para "salvar" as perguntas, respostas corretas e respostas do jogador, não sendo a melhor das alternativas, mas que atende aos objetivos e requisitos do projeto, ser simples e pouco complexo.
-
+<h2>Geral</h2>
+<p align="justify">
+	O principal objetivo para o desenvolvimento dessa aplicação não é resolver algum problema específico ou geral, mas única e simplesmente colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript, sendo esse último o maior foco da prática. Sobre o projeto em si, como a imagem acima sugere, se trata de um **Quiz** desenvolvido com **JavaScript**. Toda a dinâmica é criada com *Arrays*. Nesse projeto arrays são usados para "salvar" as perguntas, respostas corretas e respostas do jogador, embora não seja a melhor das alternativas, atende aos objetivos e requisitos do projeto, ser simples e pouco complexo.
+</p>
 
 <p align="center">
 	<img src="imagens/tecnologia.png">
 	<span>Exemplo de pergunta do Quiz</span>
 </p>
 
-## O Jogo
-Composto de 3 temas diferentes, sendo eles: *Tecnologia, Futebol* e *Geral.* Na tela inicial o jogador seleciona o tema que deseja jogar e a partir disso ele terá que responder 10 perguntas sobre o assunto. O nível das perguntas pode variar entre fácil e não tão fácil, isso certamente varia de jogador para jogador. Ao final do jogo, após responder todas as 10 perguntas, as estátisticas são exibidas, sendo elas: _A quantidade de respostas corretas, quanto tempo o jogador levou para responder todas as perguntas e se ele **passou** ou **falhou** no Quiz._
-
+<h2>O Jogo</h2>
+<p>
+	Com 3 temas diferentes: *Tecnologia, Futebol* e *Geral.* Na tela inicial o jogador seleciona o tema que deseja jogar e a partir disso ele terá que responder 10 perguntas sobre o assunto escolhido. O nível das perguntas pode variar entre fácil e não tão fácil, isso certamente varia de jogador para jogador. Após responder todas as 10 perguntas, as estátisticas são exibidas, sendo elas: _A quantidade de respostas corretas, quanto tempo o jogador levou para responder todas as perguntas e se ele **passou** ou **falhou** no Quiz._
+</p>
 
 <p align="center">
 	<img src="imagens/fim-de-jogo.png">
