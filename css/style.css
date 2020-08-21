@@ -1,3 +1,41 @@
+@media (max-width: 800px){
+
+	header h1{
+		font-size: 1.6em;
+	}
+
+	header h3{
+		font-size: 0.7em;
+	}
+
+	div.alternativa,
+	.numero-questao,
+	.titulo-questao,
+	.botoes{
+		font-size: 0.8em;
+	}
+}
+
+@media (min-width: 801px){
+
+	header h1{
+		font-size: 4em;
+	}
+
+	.numero-questao{
+		font-size: 1.9em;
+	}
+
+	.titulo-questao{
+		font-size: 2em;
+	}
+
+	div.alternativa{
+		font-size: 1.6em;
+	}
+
+}
+
 /* =-=-= Cabeçalho =-=-= */
 
 header{
@@ -7,7 +45,6 @@ header{
 
 header h1{
 	font-family: 'Ranchers', cursive;
-	font-size: 4em;
 	color: black;
 	padding: 0;
 	margin: 0;
@@ -34,7 +71,6 @@ div.borda{
 .numero-questao{
 	margin: 0 auto;
 	font-family: 'Epilogue', sans-serif;
-	font-size: 1.9em;
 	padding: 20px 120px;
 	font-weight: bolder;
 }
@@ -42,7 +78,6 @@ div.borda{
 .titulo-questao{
 	margin: 0 auto;
 	font-family: 'Epilogue', sans-serif;
-	font-size: 2em;
 	text-align: center;
 }
 
@@ -55,7 +90,6 @@ div.alternativa{
 	border: 1px solid black;
 	text-align: center;
 	font-family: 'Epilogue', sans-serif;
-	font-size: 1.6em;
 	width: 35%;
 	margin: 0 auto;
 }

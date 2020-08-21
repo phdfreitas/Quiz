@@ -200,11 +200,11 @@ function game(letra){
 
 		let btn1 = document.createElement("button")
 		btn1.innerHTML = 'Tentar novamente'
-		btn1.classList = 'btn btn-lg btn-success botoes'
+		btn1.classList = 'btn btn-success botoes'
 
 		let btn2 = document.createElement("button")
 		btn2.innerHTML = 'Sair'
-		btn2.classList = 'btn btn-lg btn-danger botoes'
+		btn2.classList = 'btn btn-danger botoes'
 
 		div2.appendChild(btn1)
 		div2.appendChild(btn2)
