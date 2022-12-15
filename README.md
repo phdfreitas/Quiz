@@ -26,7 +26,7 @@
 
 ## Para Jogar
 - Se quiser apenas testar o jogo, basta acessar o link abaixo:
-	- <a href="https://quiz.phdfreitas.repl.co/">JavaScript Quiz!</a>
+	- <a href="https://phdfreitas-javascriptquiz.netlify.app/">JavaScript Quiz!</a>
 - Se quiser baixar o jogo e fazer seus próprios testes e alterações:
 	- No terminal do seu sistema operacional, cole o seguinte comando:
 	> git clone https://github.com/phdfreitas/Quiz.git
